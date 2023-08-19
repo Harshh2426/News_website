@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <h2>News App</h2>
+      </div>
+      <nav class="navbar">
+        <ul class="navbar-lists">
+          <li>
+            <a href="#" class="navbar-links" onclick="newsNavbar('Cricket')">Cricket</a>
+          </li>
+          <li>
+            <a href="#" class="navbar-links" onclick="newsNavbar('finance')"
+              >Finance</a
+            >
+          </li>
+          <li>
+            <a href="#" class="navbar-links" onclick="newsNavbar('Politics')"
+              >Politics</a
+            >
+          </li>
+          <li>
+            <a href="#" class="navbar-links" onclick="newsNavbar('Technology')"
+              >Technology</a
+            >
+          </li>
+        </ul>
+        <div class="search">
+          <input type="text" class="form" placeholder="e.g, Science" />
+          <a href="#" class="btn">Search</a>
+        </div>
+      </nav>
+      <div class="icon-box">
+        <ion-icon name="search" class="icon"></ion-icon>
+        <ion-icon name="close" class="icon"></ion-icon>
+      </div>
+    </header>
+
+    <main>
+      <div class="cards-container" id="cards-container"></div>
+    </main>
+
+    <template id="template-news-card">
+      <div class="card">
+        <div class="card-header">
+          <img
+            src="https://via.placeholder.com/400x200"
+            alt="news-image"
+            title="news-image"
+            class="news-img"
+            id="news-img"
+          />
+        </div>
+        <div class="card-content">
+          <h3 id="news-title">This is title</h3>
+          <h6 class="news-source" id="news-source">End Gadget 26/07/2090</h6>
+          <p class="news-desc" id="news-desc">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit,
+            nobis.
+          </p>
+          <a href="#" id="news-link">Read more</a>
+        </div>
+      </div>
+    </template>
+    <footer class="footer">
+      <p class="footer-content">Made by Harsh Kumar</p>
+    </footer>
+    
+    <script src="script.js">
+      
+    </script>
+  </body>
+</html>
